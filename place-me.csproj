@@ -83,6 +83,16 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Pages\Admin\bookings.aspx" />
+    <Content Include="Pages\Admin\dashboard.aspx" />
+    <Content Include="Pages\Admin\reports.aspx" />
+    <Content Include="Pages\Admin\rooms.aspx" />
+    <Content Include="Pages\Admin\users.aspx" />
+    <Content Include="Pages\Clients\available_rooms.aspx" />
+    <Content Include="Pages\Clients\profile.aspx" />
+    <Content Include="Pages\Clients\room_details.aspx" />
+    <Content Include="Pages\Clients\signin.aspx" />
+    <Content Include="Pages\Clients\signup.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -97,6 +107,76 @@
     </Compile>
     <Compile Include="Master\Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\bookings.aspx.cs">
+      <DependentUpon>bookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\bookings.aspx.designer.cs">
+      <DependentUpon>bookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\reports.aspx.cs">
+      <DependentUpon>reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\reports.aspx.designer.cs">
+      <DependentUpon>reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\rooms.aspx.cs">
+      <DependentUpon>rooms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\rooms.aspx.designer.cs">
+      <DependentUpon>rooms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Admin\users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Admin\users.aspx.designer.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Clients\available_rooms.aspx.cs">
+      <DependentUpon>available_rooms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Clients\available_rooms.aspx.designer.cs">
+      <DependentUpon>available_rooms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Clients\profile.aspx.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Clients\profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Clients\room_details.aspx.cs">
+      <DependentUpon>room_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Clients\room_details.aspx.designer.cs">
+      <DependentUpon>room_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Clients\signin.aspx.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Clients\signin.aspx.designer.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Clients\signup.aspx.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Clients\signup.aspx.designer.cs">
+      <DependentUpon>signup.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -134,8 +214,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\" />
-    <Folder Include="Pages\Admin\" />
-    <Folder Include="Pages\Clients\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <PropertyGroup>
