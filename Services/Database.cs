@@ -1,0 +1,61 @@
+﻿using System.Data;
+using System.Data.SqlClient;
+
+namespace place_me.Services
+{
+    internal class DataBase
+    {
+        private SqlConnection con;
+        public SqlCommand cmd;
+        public SqlDataReader rd { get; set; }
+        public DataTable dt;
+        public DataSet ds;
+        public DataBase()
+        {
+
+        }
+
+        private string connectionstr = "Data Source = SQL5101.site4now.net; Initial Catalog = db_aa15d9_edutechdb; User Id = db_aa15d9_edutechdb_admin; Password = 0987@_Six%54";
+        public SqlConnection mySqlConn()
+        {
+
+            con = new SqlConnection(connectionstr);
+            con.Open();
+            return con;
+        }
+
+        public SqlCommand sqlQueries(string query)
+        {
+            mySqlConn();
+            cmd = new SqlCommand(query, con);
+            return cmd;
+        }
+
+        public void nonQuery()
+        {
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+
+        public SqlDataReader ReadData(string sql)
+        {
+            SqlCommand cmd = new SqlCommand(sql, con);
+            rd = cmd.ExecuteReader();
+            return rd;
+
+        }
+
+
+        // A method to retrieve data 
+        public DataTable GetData(string query)
+        {
+            mySqlConn();
+            cmd = new SqlCommand(query, con);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            return dt;
+        }
+    }
+}
