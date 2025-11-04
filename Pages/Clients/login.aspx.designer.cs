@@ -11,8 +11,17 @@ namespace place_me.Pages.Clients
 {
 
 
-    public partial class signup
+    public partial class login
     {
+
+        /// <summary>
+        /// DropUser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropUser;
 
         /// <summary>
         /// floatingInput control.
@@ -24,15 +33,6 @@ namespace place_me.Pages.Clients
         protected global::System.Web.UI.WebControls.TextBox floatingInput;
 
         /// <summary>
-        /// floatingEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox floatingEmail;
-
-        /// <summary>
         /// floatingPassword control.
         /// </summary>
         /// <remarks>
@@ -42,21 +42,12 @@ namespace place_me.Pages.Clients
         protected global::System.Web.UI.WebControls.TextBox floatingPassword;
 
         /// <summary>
-        /// floatingStudentNumber control.
+        /// btnLogIn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox floatingStudentNumber;
-
-        /// <summary>
-        /// btnregister control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnregister;
+        protected global::System.Web.UI.WebControls.Button btnLogIn;
     }
 }
