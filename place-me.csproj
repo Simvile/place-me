@@ -84,7 +84,8 @@
   <ItemGroup>
     <Folder Include="Interfaces\" />
     <Folder Include="Master\" />
-    <Folder Include="Pages\" />
+    <Folder Include="Pages\Admin\" />
+    <Folder Include="Pages\Clients\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <PropertyGroup>
